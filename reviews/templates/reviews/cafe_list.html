@@ -1,0 +1,25 @@
+
+f{% extends 'base.html' %}
+
+{% block title %}
+<h2>cafe list</h2>
+{% endblock %}
+
+{% block content %}
+{% if cafe_list %}
+<div class="row">
+    {% for cafe in cafe_list %}
+    <div class="col-xs-6 col-lg-4">
+        <h4><a href="{% url 'reviews:cafe_detail' cafe.id %}">
+        {{ cafe.name }}
+        </a></h4>
+        <h5>{{ cafe.review_set.count }} reviews</h5>
+        <h5>{{ cafe.average_rating | floatformat }} average rating</h5>
+    </div>
+    {% endfor %}
+    f
+</div>
+{% else %}
+    <p>No cafes are available.</p>
+{% endif %}
+{% endblock %}
