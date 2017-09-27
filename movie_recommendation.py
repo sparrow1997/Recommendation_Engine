@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-ratings = pd.read_csv('../input/rating.csv')
+ratings = pd.read_csv('..')
 ratings = ratings[:100000]
 num_users = ratings['userId'].max()
 num_movies = ratings['movieId'].max()
