@@ -6,11 +6,11 @@
 ### Recommender systems have become increasingly popular in recent years, and are utilized in a variety of areas including movies, music, news, books, research articles, search queries, social tags, and products in general. There are also recommender systems for experts,collaborators, jokes, restaurants, garments, financial services, life insurance, romantic partners (online dating), and Twitter pages
 
 ## Types Of Recommendation engine
- ### 1. [Content Based Recommendations]
+ ### 1. Content Based Recommendations
 
 Content based systems, recommends item based on a similarity comparison between the content of the items and a user’s profile. The feature of items are mapped with feature of users in order to obtain user – item similarity.
 
-### 2. [Collaborative Filtering]
+### 2. Collaborative Filtering
 
 Content-based recommendation lacks in detecting inter dependencies or complex behaviors. For example: People might like smartphones with Good Display, only if it has retina display and wouldn’t otherwise.
 
